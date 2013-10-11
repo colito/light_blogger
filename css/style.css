@@ -1,0 +1,118 @@
+body    {
+    background-color: lightsteelblue;
+}
+a	{
+	color: #000;
+}
+i	{
+	color: royalblue;
+	font-size: 9pt;
+}
+input, textarea	{
+	border: solid thin lightslategrey;
+}
+.container	{
+	padding-top: 40px;
+
+}
+#header {
+    margin-top: 8%;
+}
+
+#topper	{
+	background: lightslategrey;
+	height: 60px;
+    width: 100%;
+    position: fixed;
+    -moz-position: fixed;
+    z-index: 100;
+    margin-bottom: 100%;
+}
+#topper	#title a{
+	text-decoration: none;
+	color: #FFF;
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+#topper #links	{
+	float: right;
+	margin-right: 4%;
+	margin-top: 1.25%;
+	color: #FFF;
+}
+#topper #links a	{
+	text-decoration: none;
+	color: #FFF;
+}
+#topper #links a:hover	{
+	text-decoration: underline;
+}
+#footer  {
+    background: lightslategray;
+    color: #fff;
+    height: 30px;
+    width: 99.65%;
+    padding: 2px;
+    font-size: 8pt;
+    text-align: center;
+}
+#footer i{
+    color: #ffffff;
+}
+
+#blogs	{
+	margin-top: 1%;
+	/*height: 450px;*/
+	/*overflow: auto;*/
+	background-color: #c8def4;
+    padding: 7px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: lightslategray;
+    border-radius: 8px;
+}
+#reg_form dd	{
+	padding: 7px;
+}
+#reg_form input[type=text], 
+#reg_form input[type=email], 
+#reg_form input[type=password]	{
+	width: 70%;
+}
+#reg_form label	{
+	font-weight: 700;
+}
+#reg_form  span	{
+	display: none;
+}
+.success	{
+	color: green;
+}
+.mandatory, .error	{
+	color: red;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+/*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}*/
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*background: lightgrey rgba(255,0,0,0.8)*/; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+/*::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}*/
