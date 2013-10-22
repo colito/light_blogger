@@ -5,17 +5,18 @@ ob_start();
 	$blogger = new blogger();
 	
 	/* Blog Validation */
-	if(isset($_POST['blog_text']))
+	if(!empty($_POST['blog_text']))
 	{
 		$blog_text = "" . $_POST['blog_text'] . "";
+        $blog_title = "" . $_POST['blog_title'] . "";
 
-		if(empty($blog_text))
+		if(empty($blog_title))
 		{
-			$feedback = "Please enter some text for your post";
+			$feedback = "Please a blog title for your post";
 		}
 		else
 		{
-			$save_blog = $blogger->insert_blog(2, $blog_text);
+			$save_blog = $blogger->insert_blog(2, $blog_text, $blog_title);
 			
 			if($save_blog == 'true')
 			{
