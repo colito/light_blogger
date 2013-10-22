@@ -7,7 +7,7 @@
  target / context = result
  ***************************/
 
-.container{
+.container_12{
 	width: 95%; /*width: 1000px;*/
 	max-width: 1000px;
 	margin: auto;
@@ -141,6 +141,14 @@
 
 .container_12 .suffix_11 {
   padding-right: 85%;
+}
+
+.stalactite {
+    margin-top: 10%;
+}
+
+.stalagmite {
+    margin-bottom: 0;
 }
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
