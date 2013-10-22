@@ -1,17 +1,46 @@
 body    {
-    background-color: lightsteelblue;
+    background-color: ghostwhite;
 }
 a	{
 	color: #000;
 }
 i	{
 	color: royalblue;
-	font-size: 9pt;
+	font-size: 10pt;
+}
+h2{
+    font-size: 1.3em;
+    color: #ffffff;
+}
+h3 {
+    font-size: 1.06em;
+    color: steelblue;
+}
+p a {
+    color: steelblue;
+}
+p a :hover {
+    text-decoration: underline;
+}
+.success {
+    color: limegreen;
+}
+.error {
+    color: firebrick;
+}
+.upper {
+    color: steelblue;
+}
+.lower {
+    color: slategray;
+}
+textarea {
+    height: 180px;
 }
 input, textarea	{
 	border: solid thin lightslategrey;
 }
-.container	{
+.container_12	{
 	padding-top: 40px;
 
 }
@@ -20,8 +49,8 @@ input, textarea	{
 }
 
 #topper	{
-	background: lightslategrey;
-	height: 60px;
+	background: steelblue;
+	height: 40px;
     width: 100%;
     position: fixed;
     -moz-position: fixed;
@@ -29,24 +58,24 @@ input, textarea	{
     margin-bottom: 100%;
 }
 #topper	#title a{
-	text-decoration: none;
-	color: #FFF;
-	float: left;
-	margin-top: 1%;
-	margin-left: 1%;
+    text-decoration: none;
+    color: #FFF;
+    float: left;
+    margin-top: 0.4%;
+    margin-left: 1%;
 }
 #topper #links	{
-	float: right;
-	margin-right: 4%;
-	margin-top: 1.25%;
-	color: #FFF;
+    float: right;
+    margin-right: 4%;
+    margin-top: 0.75%;
+    color: #FFF;
 }
 #topper #links a	{
-	text-decoration: none;
-	color: #FFF;
+    text-decoration: none;
+    color: #FFF;
 }
 #topper #links a:hover	{
-	text-decoration: underline;
+    text-decoration: underline;
 }
 #footer  {
     background: lightslategray;
@@ -68,7 +97,18 @@ input, textarea	{
 	background-color: #c8def4;
     padding: 7px;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 2px;
+    border-color: lightslategray;
+    border-radius: 8px;
+}
+#content	{
+    margin-top: 1%;
+    /*height: 450px;*/
+    /*overflow: auto;*/
+    background-color: #c8def4;
+    padding: 7px;
+    border-style: dashed;
+    border-width: 2px;
     border-color: lightslategray;
     border-radius: 8px;
 }
