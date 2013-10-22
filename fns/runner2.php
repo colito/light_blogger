@@ -22,18 +22,20 @@
 		}
 
 		#Saving a blog post
-		public function	insert_blog($user_id, $entry_text)	{
+		public function	insert_blog($user_id, $entry_text, $blog_heading)	{
 
             $entry_text = mysql_real_escape_string($entry_text);
+            $blog_heading = mysql_real_escape_string($blog_heading);
 
-            //var_dump($entry_text);
+            var_dump($blog_heading);
 
 			$sql = 	"INSERT INTO blog".
-					"(user_id, blog_text) ".
-					"VALUES($user_id, '$entry_text')";
+					"(user_id, blog_text, blog_title) ".
+					"VALUES($user_id, '$entry_text', '$blog_heading')";
+
+            var_dump($sql);
 			
 			$result = mysql_query($sql);
-            //var_dump($sql);
 			
 			if(!$result)
 			{
@@ -51,20 +53,23 @@
 		public function	show_all_blogs()	{
 		
 			$blogs = $this->get_blogs();
-			$user_gravatar = $this->get_gravatar('');
+			$user_gravatar = $this->get_gravatar('pride.mokhele@gmail.com');
 					
 			for($i=0; $i < count($blogs); $i++)
 			{
-				$user_id = $blogs[$i]['id'];
+				//$user_id = $blogs[$i]['id'];
 				$date = $blogs[$i]['date'];
 				$blog = $blogs[$i]['blog_text'];
-						
+                $blog_title = $blogs[$i]['blog_title'];
+
+                echo "<h3>".$blog_title."</h3>";
+                echo "<i>(". $date .")</i>";
+                echo "<br><br>";
 				echo "<img src='".$user_gravatar."' alt='gravatar'/>" ." ";
-				echo "<i>". $user_id ."</i>"." \t";
 				echo $blog ." \t";
-				echo "<i>(". $date .")</i>";
+
 				echo "<br/><br/>";
-                //echo "<hr/>";
+                //echo "<hr>";
 			}
 		}
 
