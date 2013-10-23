@@ -27,13 +27,9 @@
             $entry_text = mysql_real_escape_string($entry_text);
             $blog_heading = mysql_real_escape_string($blog_heading);
 
-            var_dump($blog_heading);
-
 			$sql = 	"INSERT INTO blog".
 					"(user_id, blog_text, blog_title) ".
 					"VALUES($user_id, '$entry_text', '$blog_heading')";
-
-            var_dump($sql);
 			
 			$result = mysql_query($sql);
 			
