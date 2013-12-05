@@ -10,7 +10,7 @@
 </div>
 -->
 
-<div id="blogs" class="grid_12">
+<div id="blogs" class="prefix_4 grid_4">
     <?php $blogger->show_all_blogs(); ?>
 </div>
 
