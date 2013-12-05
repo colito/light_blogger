@@ -49,7 +49,7 @@
 		public function	show_all_blogs()	{
 		
 			$blogs = $this->get_blogs();
-			$user_gravatar = $this->get_gravatar('pride.mokhele@gmail.com');
+			//$user_gravatar = $this->get_gravatar('pride.mokhele@gmail.com');
 					
 			for($i=0; $i < count($blogs); $i++)
 			{
@@ -61,7 +61,7 @@
                 echo "<h3>".$blog_title."</h3>";
                 echo "<i>(". $date .")</i>";
                 echo "<br><br>";
-				echo "<img src='".$user_gravatar."' alt='gravatar'/>" ." ";
+				//echo "<img src='".$user_gravatar."' alt='gravatar'/>" ." ";
 				echo $blog ." \t";
 
 				echo "<br/><br/>";

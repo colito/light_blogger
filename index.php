@@ -3,10 +3,12 @@
    require_once('includes/header.php');
 ?>
 
+<!--
 <div id="content" class="grid_12">
     <h3>Welcome!</h3>
     <p>This is a little demo project to play around with some light weight blogging.</p>
 </div>
+-->
 
 <div id="blogs" class="grid_12">
     <?php $blogger->show_all_blogs(); ?>
